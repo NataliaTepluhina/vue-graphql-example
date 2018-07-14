@@ -103,11 +103,11 @@
                 allHeroes: []
             }
         },
-        // apollo: {
-        //     allHeroes: {
-        //         query: ALL_HEROES_QUERY,
-        //     }
-        // },
+        apollo: {
+            allHeroes: {
+                query: ALL_HEROES_QUERY,
+            }
+        },
         methods: {
             addHero() {
                 const hero = {

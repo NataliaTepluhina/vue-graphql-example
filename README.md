@@ -5,17 +5,12 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+You should run Apollo server with
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+yarn apollo
 ```
 
-### Lints and fixes files
+Now you're able to fetch data from this server. To build an application, please run
 ```
-yarn run lint
+yarn serve
 ```

@@ -1,0 +1,42 @@
+# Included scalars
+scalar JSON
+scalar Upload
+
+# Included directives
+
+# Cache control
+directive @cacheControl(
+  maxAge: Int,
+  scope: CacheControlScope
+) on OBJECT | FIELD_DEFINITION
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+
+# Vue team member
+type VueHero {
+    id: ID!
+    name: String!
+    image: String
+    githubLink: String
+    twitterLink: String
+}
+
+input HeroInput {
+    name: String!
+    image: String
+    githubLink: String
+    twitterLink: String
+}
+
+
+type Query {
+  allHeroes: [VueHero]
+}
+
+type Mutation {
+  addHero(hero: HeroInput!): VueHero!
+  deleteHero(name: String!): Boolean
+}

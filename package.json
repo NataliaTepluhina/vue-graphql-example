@@ -1,0 +1,65 @@
+{
+  "name": "vv-graphql-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "apollo": "vue-cli-service apollo:watch",
+    "apollo:run": "vue-cli-service apollo:run"
+  },
+  "dependencies": {
+    "@vue/cli": "^3.0.0-rc.4",
+    "graphql-type-json": "^0.2.1",
+    "lowdb": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "shortid": "^2.2.8",
+    "vue": "^2.5.16",
+    "vue-apollo": "^3.0.0-beta.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.4",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.4",
+    "@vue/cli-service": "^3.0.0-rc.4",
+    "eslint-plugin-graphql": "^2.1.1",
+    "graphql-tag": "^2.9.0",
+    "vue-cli-plugin-apollo": "^0.15.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "graphql/template-strings": [
+        "error",
+        {
+          "env": "literal",
+          "projectName": "app"
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "plugins": [
+      "graphql"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

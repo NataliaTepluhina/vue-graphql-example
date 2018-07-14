@@ -1,2 +1,21 @@
-# VV-GraphQL-workshop
-Demo application with Apollo Server to show on VueVixens workshop
+# vv-graphql-workshop
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```

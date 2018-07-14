@@ -76,7 +76,11 @@
     const ADD_HERO_MUTATION = gql`
         mutation AddHero ($hero: HeroInput!){
           addHero (hero: $hero) {
+            id
             name
+            twitter
+            github
+            image
           }
         }
     `;
@@ -147,7 +151,7 @@
                     variables: {
                         name,
                     },
-                    update: (store, {data: {}}) => {
+                    update: (store) => {
                         const data = store.readQuery({query: ALL_HEROES_QUERY});
                         const heroToDelete = data.allHeroes.find(hero => hero.name === name);
                         data.allHeroes.splice(data.allHeroes.indexOf(heroToDelete), 1);

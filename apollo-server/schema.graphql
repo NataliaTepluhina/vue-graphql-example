@@ -20,15 +20,15 @@ type VueHero {
     id: ID!
     name: String!
     image: String
-    githubLink: String
-    twitterLink: String
+    github: String
+    twitter: String
 }
 
 input HeroInput {
     name: String!
     image: String
-    githubLink: String
-    twitterLink: String
+    github: String
+    twitter: String
 }
 
 

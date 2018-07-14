@@ -16,8 +16,8 @@ export default {
                 id: shortid.generate(),
                 name: hero.name,
                 image: hero.image || '',
-                twitterLink: hero.twitterLink || '',
-                githubLink: hero.githubLink || ''
+                twitter: hero.twitter || '',
+                github: hero.github || ''
             };
             db
                 .get('heroes')

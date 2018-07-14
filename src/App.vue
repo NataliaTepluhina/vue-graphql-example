@@ -61,28 +61,31 @@
 <script>
     import gql from 'graphql-tag'
 
+    const fragment = gql`
+    fragment Hero on VueHero {
+        id
+        name
+        twitter
+        github
+        image
+    }`;
+
     const ALL_HEROES_QUERY = gql`
         query {
           allHeroes {
-            id
-            name
-            twitter
-            github
-            image
+            ...Hero
           }
         }
+        ${fragment}
     `;
 
     const ADD_HERO_MUTATION = gql`
         mutation AddHero ($hero: HeroInput!){
           addHero (hero: $hero) {
-            id
-            name
-            twitter
-            github
-            image
+            ...Hero
           }
         }
+        ${fragment}
     `;
 
     const DELETE_HERO_MUTATION = gql`

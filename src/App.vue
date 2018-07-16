@@ -7,7 +7,7 @@
         <v-content class="teal lighten-3">
             <v-container fluid class="app-container white" fill-height grid-list-md>
                 <v-layout class="hero-cards-layout" wrap v-if="allHeroes.length">
-                    <v-flex md3 xs12 v-for="hero in allHeroes">
+                    <v-flex md3 xs12 v-for="hero in allHeroes" :key="hero.name">
                         <v-card height="100%">
                             <v-card-media height="250px"
                                           :src="hero.image"></v-card-media>

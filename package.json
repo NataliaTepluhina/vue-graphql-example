@@ -7,10 +7,12 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "apollo": "vue-cli-service apollo:watch",
-    "apollo:run": "vue-cli-service apollo:run"
+    "apollo:run": "vue-cli-service apollo:run",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.4",
+    "apollo-link-schema": "^1.1.0",
     "graphql-type-json": "^0.2.1",
     "lowdb": "^1.0.0",
     "mkdirp": "^0.5.1",
@@ -24,7 +26,11 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.4",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.4",
+    "@vue/cli-plugin-unit-jest": "^3.0.0",
     "@vue/cli-service": "^3.0.0-rc.4",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
     "eslint-plugin-graphql": "^2.1.1",
     "graphql-tag": "^2.9.0",
     "vue-cli-plugin-apollo": "^0.15.0",

@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App displayed heroes correctly with query data 1`] = `
+<v-app-stub
+  id="app"
+>
+  <v-toolbar-stub
+    app=""
+    color="teal darken-2"
+    dark=""
+    fixed=""
+    scrollthreshold="300"
+  >
+    <img
+      alt="Logo"
+      class="logo"
+      src="./assets/vue-graphql.png"
+    />
+     
+    <v-toolbar-title-stub
+      class="hidden-xs-only"
+    >
+      Vue Heroes
+    </v-toolbar-title-stub>
+  </v-toolbar-stub>
+   
+  <v-content-stub
+    class="teal lighten-3"
+    tag="main"
+  >
+    <v-container-stub
+      class="app-container white"
+      fill-height=""
+      fluid=""
+      grid-list-md=""
+      tag="div"
+    >
+      <v-layout-stub
+        class="hero-cards-layout"
+        tag="div"
+        wrap=""
+      >
+        <v-flex-stub
+          class="hero-cards"
+          md3=""
+          tag="div"
+          xs12=""
+        >
+          <v-card-stub
+            height="100%"
+            tag="div"
+          >
+            <v-card-media-stub
+              height="250px"
+              src="https://pbs.twimg.com/profile_images/888432310504370176/mhoGA4uj_400x400.jpg"
+            />
+             
+            <v-card-title-stub
+              class="hero-title"
+              primarytitle="true"
+            >
+              <div>
+                <h3
+                  class="title"
+                >
+                  Evan You
+                </h3>
+                 
+                <div
+                  class="hero-icons"
+                >
+                  <a
+                    href="https://github.com/yyx990803"
+                    target="_blank"
+                  >
+                    <i
+                      class="fab fa-github"
+                    />
+                  </a>
+                   
+                  <a
+                    href="https://twitter.com/youyuxi"
+                    target="_blank"
+                  >
+                    <i
+                      class="fab fa-twitter"
+                    />
+                  </a>
+                </div>
+              </div>
+            </v-card-title-stub>
+             
+            <v-card-actions-stub>
+              <v-spacer-stub />
+               
+              <v-btn-stub
+                activeclass="v-btn--active"
+                icon="true"
+                ripple="true"
+                tag="button"
+                type="button"
+              >
+                <v-icon-stub>
+                  delete
+                </v-icon-stub>
+              </v-btn-stub>
+            </v-card-actions-stub>
+          </v-card-stub>
+        </v-flex-stub>
+      </v-layout-stub>
+       
+      <v-dialog-stub
+        maxwidth="none"
+        origin="center center"
+        transition="dialog-transition"
+        width="800"
+      >
+         
+        <v-card-stub
+          class="dialog-form"
+          tag="div"
+        >
+          <v-form-stub>
+            <v-text-field-stub
+              label="Name"
+              required=""
+              rules="function (v) {
+        return !!v || 'Name is required';
+      }"
+            />
+             
+            <v-text-field-stub
+              label="Image Link"
+            />
+             
+            <v-text-field-stub
+              label="Twitter"
+            />
+             
+            <v-text-field-stub
+              label="Github"
+            />
+          </v-form-stub>
+           
+          <v-card-actions-stub>
+            <v-btn-stub
+              activeclass="v-btn--active"
+              disabled="true"
+              ripple="true"
+              tag="button"
+              type="button"
+            >
+              submit
+            </v-btn-stub>
+          </v-card-actions-stub>
+        </v-card-stub>
+      </v-dialog-stub>
+    </v-container-stub>
+  </v-content-stub>
+   
+  <v-footer-stub
+    app=""
+    color="teal darken-2"
+    height="32"
+  >
+    <span
+      class="footer-text text-xs-center white--text"
+    >
+      © 2018 
+    </span>
+  </v-footer-stub>
+</v-app-stub>
+`;

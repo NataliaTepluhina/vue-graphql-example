@@ -1,13 +1,15 @@
 export default {
   Query: {
-    allHeroes: () => ({
-      id: '-pBE1JAyz',
-      name: 'Evan You',
-      image:
-        'https://pbs.twimg.com/profile_images/888432310504370176/mhoGA4uj_400x400.jpg',
-      twitter: 'youyuxi',
-      github: 'yyx990803',
-    }),
+    allHeroes: () => [
+      {
+        id: '-pBE1JAyz',
+        name: 'Evan You',
+        image:
+          'https://pbs.twimg.com/profile_images/888432310504370176/mhoGA4uj_400x400.jpg',
+        twitter: 'youyuxi',
+        github: 'yyx990803',
+      },
+    ],
   },
   Mutation: {
     addHero: (root, { hero }) => {
@@ -20,8 +22,5 @@ export default {
       };
       return newHero;
     },
-  },
-  addHero: {
-    __resolveType: () => 'VueHero',
   },
 };

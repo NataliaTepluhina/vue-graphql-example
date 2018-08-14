@@ -60,6 +60,9 @@
 
 <script>
 import gql from 'graphql-tag';
+import { graphql } from 'graphql';
+import resolvers from '../tests/mockResolvers';
+import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools';
 
 const fragment = gql`
   fragment Hero on VueHero {
@@ -161,6 +164,63 @@ export default {
         },
       });
     },
+  },
+  created() {
+    const schema = `
+    type VueHero {
+      id: ID!
+      name: String!
+      image: String
+      github: String
+      twitter: String
+    }
+
+    input HeroInput {
+      name: String!
+      image: String
+      github: String
+      twitter: String
+    }
+
+
+    type Query {
+      allHeroes: [VueHero]
+    }
+
+    type Mutation {
+      addHero(hero: HeroInput!): VueHero!
+      deleteHero(name: String!): Boolean
+    } 
+    `;
+
+    const query = `
+      query {
+        allHeroes {
+          id
+          name
+          twitter
+          github
+          image
+        }
+      }
+    `;
+
+    const executableSchema = makeExecutableSchema({
+      typeDefs: schema,
+      resolvers,
+      resolverValidationOptions: {
+        requireResolversForResolveType: false,
+      },
+    });
+
+    addMockFunctionsToSchema({
+      schema: executableSchema,
+      preserveResolvers: true,
+    });
+
+    graphql(executableSchema, query).then(result =>
+      console.log('Got result', result),
+    );
   },
 };
 </script>

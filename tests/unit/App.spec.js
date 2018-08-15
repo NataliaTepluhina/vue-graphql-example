@@ -38,7 +38,7 @@ describe('App', () => {
   //   expect(wrapper.element).toMatchSnapshot();
   // });
 
-  test('performed allHeroes query against schema', () => {
+  test('called allHeroes query against schema', () => {
     const query = `
       query {
         allHeroes {
@@ -70,5 +70,28 @@ describe('App', () => {
     });
     wrapper.vm.addHero();
     expect(mutate).toBeCalled();
+  });
+
+  test('called Apollo mutation in addHero() method', () => {
+    const mutation = `
+        mutation {
+          addHero(hero: {
+            name: "TestName",
+            twitter: "TestTwitter",
+            github: "TestGithub",
+            image: "TestImage",
+          }) {
+            id
+            name
+            twitter
+            github
+            image
+          }
+        }
+    `;
+    graphql(schema, mutation).then(result => {
+      expect(result.data.addHero).toBeDefined();
+      expect(result.data.addHero.name).toEqual('TestName');
+    });
   });
 });

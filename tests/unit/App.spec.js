@@ -1,4 +1,4 @@
-import { createLocalVue, shallowMount } from '@vue/test-utils';
+import { createLocalVue, shallowMount, mount } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import App from '../../src/App';
 import { graphql } from 'graphql';
@@ -10,6 +10,10 @@ describe('App', () => {
   beforeEach(() => {
     localVue = createLocalVue();
     localVue.use(Vuetify, {});
+    addMockFunctionsToSchema({
+      schema,
+      preserveResolvers: true,
+    });
   });
 
   test('is a Vue instance', () => {
@@ -46,15 +50,31 @@ describe('App', () => {
         }
       }
     `;
-    addMockFunctionsToSchema({
-      schema,
-      preserveResolvers: true,
-    });
     const wrapper = shallowMount(App, { localVue });
     graphql(schema, query).then(result => {
       wrapper.setData(result.data);
       expect(result.data.allHeroes.length).toEqual(1);
       expect(wrapper.element).toMatchSnapshot();
     });
+  });
+
+  test('called Apollo mutation in addHero() method', () => {
+    const mutate = jest.fn();
+    const wrapper = mount(App, {
+      localVue,
+      mocks: {
+        $apollo: {
+          mutate,
+        },
+      },
+    });
+    wrapper.setData({
+      name: 'Test',
+      image: 'Test',
+      github: 'Test',
+      twitter: 'Test',
+    });
+    wrapper.vm.addHero();
+    expect(mutate).toBeCalled();
   });
 });

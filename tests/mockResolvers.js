@@ -12,15 +12,12 @@ export default {
     ],
   },
   Mutation: {
-    addHero: (root, { hero }) => {
-      const newHero = {
-        id: 1,
-        name: hero.name,
-        image: hero.image || '',
-        twitter: hero.twitter || '',
-        github: hero.github || '',
-      };
-      return newHero;
-    },
+    addHero: (_, { hero }) => ({
+      id: 1,
+      name: hero.name,
+      image: hero.image || '',
+      twitter: hero.twitter || '',
+      github: hero.github || '',
+    }),
   },
 };

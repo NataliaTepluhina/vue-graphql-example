@@ -68,12 +68,6 @@ describe('App', () => {
         },
       },
     });
-    wrapper.setData({
-      name: 'Test',
-      image: 'Test',
-      github: 'Test',
-      twitter: 'Test',
-    });
     wrapper.vm.addHero();
     expect(mutate).toBeCalled();
   });

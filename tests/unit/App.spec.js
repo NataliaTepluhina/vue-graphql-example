@@ -38,7 +38,7 @@ describe('App', () => {
   //   expect(wrapper.element).toMatchSnapshot();
   // });
 
-  test('called allHeroes query against schema', () => {
+  test('called allHeroes query with mocked schema', () => {
     const query = `
       query {
         allHeroes {
@@ -72,7 +72,7 @@ describe('App', () => {
     expect(mutate).toBeCalled();
   });
 
-  test('called Apollo mutation in addHero() method', () => {
+  test('called addHero mutation with mocked schema', () => {
     const mutation = `
         mutation {
           addHero(hero: {

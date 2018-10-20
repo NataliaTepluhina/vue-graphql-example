@@ -1,9 +1,19 @@
 module.exports = {
   pluginOptions: {
     apollo: {
-      enableMocks: true,
+      enableMocks: false,
       enableEngine: true,
-      integratedEngine: false
-    }
-  }
-}
+      integratedEngine: false,
+    },
+  },
+  chainWebpack: config => {
+    config.resolve.extensions.prepend('.mjs');
+
+    config.module
+      .rule('mjs')
+      .test(/\.mjs$/)
+      .include.add(/node_modules/)
+      .end()
+      .type('javascript/auto');
+  },
+};

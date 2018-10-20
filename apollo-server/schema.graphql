@@ -1,36 +1,22 @@
 # Included scalars
 scalar JSON
-scalar Upload
-
-# Included directives
-
-# Cache control
-directive @cacheControl(
-  maxAge: Int,
-  scope: CacheControlScope
-) on OBJECT | FIELD_DEFINITION
-enum CacheControlScope {
-  PUBLIC
-  PRIVATE
-}
-
+scalar Uploadr
 
 # Vue team member
 type VueHero {
-    id: ID!
-    name: String!
-    image: String
-    github: String
-    twitter: String
+  id: ID!
+  name: String!
+  image: String
+  github: String
+  twitter: String
 }
 
 input HeroInput {
-    name: String!
-    image: String
-    github: String
-    twitter: String
+  name: String!
+  image: String
+  github: String
+  twitter: String
 }
-
 
 type Query {
   allHeroes: [VueHero]

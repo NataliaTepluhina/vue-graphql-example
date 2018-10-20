@@ -18,7 +18,7 @@
     </v-card-title>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn icon @click="$emit(deleteHero, hero.name)">
+      <v-btn icon @click="$emit('deleteHero', hero.name)">
           <v-icon>delete</v-icon>
       </v-btn>
     </v-card-actions>

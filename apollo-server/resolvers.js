@@ -6,6 +6,11 @@ export default {
 
   Query: {
     allHeroes: (root, args, { db }) => db.get('heroes').value(),
+    getHero: (root, { name }, { db }) =>
+      db
+        .get('heroes')
+        .find({ name })
+        .value(),
   },
 
   Mutation: {

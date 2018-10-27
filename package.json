@@ -9,10 +9,11 @@
     "apollo": "vue-cli-service apollo:watch",
     "apollo:run": "vue-cli-service apollo:run",
     "test:unit": "vue-cli-service test:unit",
-    "start": "cross-env NODE_ENV=production yarn run apollo:run --mode production"
+    "start": "cross-env NODE_ENV=dev yarn run apollo:run"
   },
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.4",
+    "cross-env": "^5.2.0",
     "graphql-type-json": "^0.2.1",
     "lowdb": "^1.0.0",
     "mkdirp": "^0.5.1",

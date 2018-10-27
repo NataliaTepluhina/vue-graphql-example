@@ -20,6 +20,7 @@ input HeroInput {
 
 type Query {
   allHeroes: [VueHero]
+  getHero(name: String!): VueHero!
 }
 
 type Mutation {

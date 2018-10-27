@@ -41,40 +41,6 @@
 import VueHero from './components/VueHero';
 import gql from 'graphql-tag';
 
-const fragment = gql`
-  fragment Hero on VueHero {
-    id
-    name
-    twitter
-    github
-    image
-  }
-`;
-
-const ALL_HEROES_QUERY = gql`
-  query {
-    allHeroes {
-      ...Hero
-    }
-  }
-  ${fragment}
-`;
-
-const ADD_HERO_MUTATION = gql`
-  mutation AddHero($hero: HeroInput!) {
-    addHero(hero: $hero) {
-      ...Hero
-    }
-  }
-  ${fragment}
-`;
-
-const DELETE_HERO_MUTATION = gql`
-  mutation DeleteHero($name: String!) {
-    deleteHero(name: $name)
-  }
-`;
-
 export default {
   name: 'app',
   data() {
@@ -92,11 +58,6 @@ export default {
   components: {
     VueHero,
   },
-  apollo: {
-    allHeroes: {
-      query: ALL_HEROES_QUERY,
-    },
-  },
   methods: {
     addHero() {
       const hero = {
@@ -105,45 +66,13 @@ export default {
         twitter: this.twitter,
         github: this.github,
       };
-      this.$apollo.mutate({
-        mutation: ADD_HERO_MUTATION,
-        variables: {
-          hero,
-        },
-        update: (store, { data: { addHero } }) => {
-          const data = store.readQuery({ query: ALL_HEROES_QUERY });
-          data.allHeroes.push(addHero);
-          store.writeQuery({ query: ALL_HEROES_QUERY, data });
-        },
-        optimisticResponse: {
-          __typename: 'Mutation',
-          addHero: {
-            __typename: 'VueHero',
-            id: -1,
-            ...hero,
-          },
-        },
-      });
       this.dialog = false;
       this.name = '';
       this.image = '';
       this.github = '';
       this.twitter = '';
     },
-    deleteHero(name) {
-      this.$apollo.mutate({
-        mutation: DELETE_HERO_MUTATION,
-        variables: {
-          name,
-        },
-        update: store => {
-          const data = store.readQuery({ query: ALL_HEROES_QUERY });
-          const heroToDelete = data.allHeroes.find(hero => hero.name === name);
-          data.allHeroes.splice(data.allHeroes.indexOf(heroToDelete), 1);
-          store.writeQuery({ query: ALL_HEROES_QUERY, data });
-        },
-      });
-    },
+    deleteHero(name) {},
   },
 };
 </script>

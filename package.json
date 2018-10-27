@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "apollo": "vue-cli-service apollo:watch",
     "apollo:run": "vue-cli-service apollo:run",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "start": "yarn apollo"
   },
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.4",

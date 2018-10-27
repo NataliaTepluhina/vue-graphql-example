@@ -9,7 +9,7 @@
     "apollo": "vue-cli-service apollo:watch",
     "apollo:run": "vue-cli-service apollo:run",
     "test:unit": "vue-cli-service test:unit",
-    "start": "yarn apollo"
+    "start": "cross-env NODE_ENV=production yarn run apollo:run --mode production"
   },
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.4",

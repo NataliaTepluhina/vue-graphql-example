@@ -57,6 +57,13 @@
       "image": "https://pbs.twimg.com/profile_images/906557353549598720/oapgW_Fp_400x400.jpg",
       "twitter": "dan_abramov",
       "github": "gaearon"
+    },
+    {
+      "id": "Jq2uzIh3Vj",
+      "name": "John Papa",
+      "image": "https://pbs.twimg.com/profile_images/888397702391902208/CupdIngs_400x400.jpg",
+      "twitter": "John_Papa",
+      "github": "johnpapa"
     }
   ]
 }

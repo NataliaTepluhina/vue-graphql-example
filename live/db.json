@@ -19,7 +19,7 @@
     {
       "id": "5ahW7OxdZ",
       "name": "Sarah Drasner",
-      "image": "https://pbs.twimg.com/profile_images/1039352369232789504/M7tgq-c8_400x400.jpg",
+      "image": "https://pbs.twimg.com/profile_images/1099384716170452992/Z_2ELEQp_400x400.jpg",
       "twitter": "sarah_edo",
       "github": "sdras"
     },
@@ -31,18 +31,11 @@
       "github": "eddyerburgh"
     },
     {
-      "id": "_fIa8O60E",
-      "name": "Jen Looper",
-      "image": "https://pbs.twimg.com/profile_images/1016790897105571844/oRNcE32Y_400x400.jpg",
-      "twitter": "jenlooper",
-      "github": "jlooper"
-    },
-    {
-      "id": "8BBt2TAOM",
-      "name": "Blake Newman",
-      "image": "https://pbs.twimg.com/profile_images/884929786686169088/a-vxWBFi_400x400.jpg",
-      "twitter": "blakenewman",
-      "github": "blake-newman"
+      "id": "bneqe0dcq",
+      "name": "Divya Sasidharan",
+      "image": "https://pbs.twimg.com/profile_images/1059475380996837378/oH6kUObM_400x400.jpg",
+      "twitter": "shortdiv",
+      "github": "shortdiv"
     },
     {
       "id": "atJ1cej1L",
@@ -59,11 +52,11 @@
       "github": "gaearon"
     },
     {
-      "id": "Jq2uzIh3Vj",
-      "name": "John Papa",
-      "image": "https://pbs.twimg.com/profile_images/888397702391902208/CupdIngs_400x400.jpg",
-      "twitter": "John_Papa",
-      "github": "johnpapa"
+      "id": "8FE2-sgyW",
+      "name": "Rahul Kadyan",
+      "image": "https://pbs.twimg.com/profile_images/1124598366090874880/HyB0jQQp_400x400.jpg",
+      "twitter": "znck0",
+      "github": "znck"
     }
   ]
 }

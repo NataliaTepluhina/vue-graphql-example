@@ -3,20 +3,6 @@
   "uploads": [],
   "heroes": [
     {
-      "id": "-pBE1JAyz",
-      "name": "Adria Fontcuberta",
-      "image": "https://pbs.twimg.com/profile_images/1099593142511243264/W87cHsBM_400x400.png",
-      "twitter": "afontcu_ ",
-      "github": "afontcu"
-    },
-    {
-      "id": "FfGZg1Y1D",
-      "name": "Debbie O'Brien",
-      "image": "https://pbs.twimg.com/profile_images/976556373440856064/GcKG1rUN_400x400.jpg",
-      "twitter": "debs_obrien",
-      "github": "debs-obrien"
-    },
-    {
       "id": "5ahW7OxdZ",
       "name": "Guillaume Chau",
       "image": "https://pbs.twimg.com/profile_images/968837920688869376/KKtiQ1hY_400x400.jpg",
@@ -25,45 +11,24 @@
     },
     {
       "id": "b0PCURlkf",
-      "name": "Filip Rakowski",
-      "image": "https://pbs.twimg.com/profile_images/961933370048565249/tHK5ssm6_400x400.jpg",
-      "twitter": "filrakowski",
-      "github": "filrak"
+      "name": "Alex Jover Morales",
+      "image": "https://pbs.twimg.com/profile_images/1071037908054917123/1c1whwOd_400x400.jpg",
+      "twitter": "alexjoverm",
+      "github": "alexjoverm "
     },
     {
       "id": "bneqe0dcq",
-      "name": "Victoria Bergquist",
-      "image": "https://pbs.twimg.com/profile_images/1057780870722080768/Y7bSlrtp_400x400.jpg",
-      "twitter": "vicbergquist",
-      "github": "vicbergquist"
+      "name": "Nicolo Maria Mezzopera",
+      "image": "https://pbs.twimg.com/profile_images/717272666298826752/-pou-Otq_400x400.jpg",
+      "twitter": "DonNicoJs",
+      "github": "DonNicoJs"
     },
     {
       "id": "Jq2uzIh4u",
-      "name": "Tim Benniks",
-      "image": "https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/tim-optimized_totn5a.jpg",
-      "twitter": "timbenniks",
-      "github": "timbenniks"
-    },
-    {
-      "id": "8FE2-sgyW",
-      "name": "Alexandre Chopin",
-      "image": "https://pbs.twimg.com/profile_images/969644561994838016/oKPkZNsg_400x400.jpg",
-      "twitter": "IamNuxt",
-      "github": "alexchopin"
-    },
-    {
-      "id": "9FE12sgyW1",
-      "name": "Ruben Valseca",
-      "image": "https://pbs.twimg.com/profile_images/1093807089477140480/g_s6tNzV_400x400.jpg",
-      "twitter": "rubnvp",
-      "github": "rubnvp"
-    },
-    {
-      "id": "7Df1sgaW",
-      "name": "Quique Fdez Guerra",
-      "image": "https://pbs.twimg.com/profile_images/1098311784073740289/9bJ6ybfB_400x400.jpg",
-      "twitter": "CKGrafico",
-      "github": "CKGrafico"
+      "name": "Natalia Tepluhina",
+      "image": "https://pbs.twimg.com/profile_images/1102527483881107457/73d99XXb_400x400.png",
+      "twitter": "N_Tepluhina",
+      "github": "NataliaTepluhina"
     }
   ]
 }

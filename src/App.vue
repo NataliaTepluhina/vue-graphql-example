@@ -2,61 +2,58 @@
   <v-app>
     <v-toolbar color="teal darken-2" dark fixed app>
       <img class="logo" src="./assets/vue-graphql.png" alt="Logo">
-      <v-toolbar-title class="hidden-xs-only">Vue Heroes</v-toolbar-title>
+      <v-toolbar-title class="hidden-xs-only">VueJS Roadtrip Heroes</v-toolbar-title>
     </v-toolbar>
     <v-content class="teal lighten-3">
       <v-container fluid class="app-container white" fill-height grid-list-md>
         <v-layout class="hero-cards-layout" wrap v-if="allHeroes.length">
           <template v-for="hero in allHeroes">
-            <vue-hero :hero="hero" @deleteHero="deleteHero($event)" :key="hero.name">
-            </vue-hero>
+            <vue-hero :hero="hero" @deleteHero="deleteHero($event)" :key="hero.name"></vue-hero>
           </template>
         </v-layout>
         <v-dialog v-model="dialog" width="800" v-if="allHeroes.length">
-            <v-btn slot="activator" color="teal" dark>
-                Add Hero
-            </v-btn>
-            <v-card class="dialog-form">
-                <v-form v-model="valid">
-                    <v-text-field v-model="name" :rules="nameRules" label="Name" required></v-text-field>
-                    <v-text-field v-model="image" label="Image Link"></v-text-field>
-                    <v-text-field v-model="twitter" label="Twitter"></v-text-field>
-                    <v-text-field v-model="github" label="Github"></v-text-field>
-                </v-form>
-                <v-card-actions>
-                    <v-btn :disabled="!valid" @click="addHero">submit</v-btn>
-                </v-card-actions>
-            </v-card>
+          <v-btn slot="activator" color="teal" dark>Add Hero</v-btn>
+          <v-card class="dialog-form">
+            <v-form v-model="valid">
+              <v-text-field v-model="name" :rules="nameRules" label="Name" required></v-text-field>
+              <v-text-field v-model="image" label="Image Link"></v-text-field>
+              <v-text-field v-model="twitter" label="Twitter"></v-text-field>
+              <v-text-field v-model="github" label="Github"></v-text-field>
+            </v-form>
+            <v-card-actions>
+              <v-btn :disabled="!valid" @click="addHero">submit</v-btn>
+            </v-card-actions>
+          </v-card>
         </v-dialog>
         <h3 class="headline" v-else>No heroes found ☹️</h3>
       </v-container>
     </v-content>
     <v-footer color="teal darken-2" app>
-        <span class="footer-text text-xs-center white--text">&copy; 2018 </span>
+      <span class="footer-text text-xs-center white--text">&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import VueHero from './components/VueHero';
-import gql from 'graphql-tag';
+import VueHero from "./components/VueHero";
+import gql from "graphql-tag";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
       valid: false,
       dialog: false,
-      name: '',
-      nameRules: [v => !!v || 'Name is required'],
-      image: '',
-      github: '',
-      twitter: '',
-      allHeroes: [],
+      name: "",
+      nameRules: [v => !!v || "Name is required"],
+      image: "",
+      github: "",
+      twitter: "",
+      allHeroes: []
     };
   },
   components: {
-    VueHero,
+    VueHero
   },
   methods: {
     addHero() {
@@ -64,13 +61,13 @@ export default {
         name: this.name,
         image: this.image,
         twitter: this.twitter,
-        github: this.github,
+        github: this.github
       };
       this.dialog = false;
-      this.name = '';
-      this.image = '';
-      this.github = '';
-      this.twitter = '';
+      this.name = "";
+      this.image = "";
+      this.github = "";
+      this.twitter = "";
     },
     deleteHero(name) {},
   },

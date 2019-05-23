@@ -4,59 +4,72 @@
   "heroes": [
     {
       "id": "-pBE1JAyz",
-      "name": "Evan You",
-      "image": "https://pbs.twimg.com/profile_images/888432310504370176/mhoGA4uj_400x400.jpg",
-      "twitter": "youyuxi",
-      "github": "yyx990803"
+      "name": "Adria Fontcuberta",
+      "image": "https://pbs.twimg.com/profile_images/1099593142511243264/W87cHsBM_400x400.png",
+      "twitter": "afontcu_ ",
+      "github": "afontcu"
     },
     {
       "id": "FfGZg1Y1D",
-      "name": "Chris Fritz",
-      "image": "https://pbs.twimg.com/profile_images/1030930265240162305/-b6cwxVU_400x400.jpg",
-      "twitter": "chrisvfritz",
-      "github": "chrisvfritz"
+      "name": "Debbie O'Brien",
+      "image": "https://pbs.twimg.com/profile_images/976556373440856064/GcKG1rUN_400x400.jpg",
+      "twitter": "debs_obrien",
+      "github": "debs-obrien"
     },
     {
       "id": "5ahW7OxdZ",
-      "name": "Sarah Drasner",
-      "image": "https://pbs.twimg.com/profile_images/1099384716170452992/Z_2ELEQp_400x400.jpg",
-      "twitter": "sarah_edo",
-      "github": "sdras"
+      "name": "Guillaume Chau",
+      "image": "https://pbs.twimg.com/profile_images/968837920688869376/KKtiQ1hY_400x400.jpg",
+      "twitter": "Akryum",
+      "github": "Akryum"
     },
     {
       "id": "b0PCURlkf",
-      "name": "Edd Yerburgh",
-      "image": "https://pbs.twimg.com/profile_images/710423916402106368/gYYdG3fP_400x400.jpg",
-      "twitter": "EddYerburgh",
-      "github": "eddyerburgh"
+      "name": "Filip Rakowski",
+      "image": "https://pbs.twimg.com/profile_images/961933370048565249/tHK5ssm6_400x400.jpg",
+      "twitter": "filrakowski",
+      "github": "filrak"
     },
     {
       "id": "bneqe0dcq",
-      "name": "Divya Sasidharan",
-      "image": "https://pbs.twimg.com/profile_images/1059475380996837378/oH6kUObM_400x400.jpg",
-      "twitter": "shortdiv",
-      "github": "shortdiv"
+      "name": "Victoria Bergquist",
+      "image": "https://pbs.twimg.com/profile_images/1057780870722080768/Y7bSlrtp_400x400.jpg",
+      "twitter": "vicbergquist",
+      "github": "vicbergquist"
     },
     {
       "id": "atJ1cej1L",
-      "name": "Eduardo San Martin Morote",
-      "image": "https://pbs.twimg.com/profile_images/918522324588093442/CrAhT77L_400x400.jpg",
-      "twitter": "posva",
-      "github": "posva"
+      "name": "David den Toom",
+      "image": "https://www.vuejsroadtrip.com/barcelona/version/1557240511932/static/content/speaker-pictures/david.jpg",
+      "twitter": "Koning_David"
     },
     {
       "id": "Jq2uzIh4u",
-      "name": "Dan Abramov",
-      "image": "https://pbs.twimg.com/profile_images/906557353549598720/oapgW_Fp_400x400.jpg",
-      "twitter": "dan_abramov",
-      "github": "gaearon"
+      "name": "Tim Benniks",
+      "image": "https://pbs.twimg.com/profile_images/1089615442707210241/YWiDQOlx_400x400.jpg",
+      "twitter": "timbenniks",
+      "github": "timbenniks"
     },
     {
       "id": "8FE2-sgyW",
-      "name": "Rahul Kadyan",
-      "image": "https://pbs.twimg.com/profile_images/1124598366090874880/HyB0jQQp_400x400.jpg",
-      "twitter": "znck0",
-      "github": "znck"
+      "name": "Alexandre Chopin",
+      "image": "https://pbs.twimg.com/profile_images/969644561994838016/oKPkZNsg_400x400.jpg",
+      "twitter": "IamNuxt",
+      "github": "alexchopin"
+    },
+    {
+      "id": "9FE12sgyW1",
+      "name": "Ruben Valseca",
+      "image": "https://pbs.twimg.com/profile_images/1093807089477140480/g_s6tNzV_400x400.jpg",
+      "twitter": "rubnvp",
+      "github": "rubnvp"
+    },
+    {
+      "id": "7Df1sgaW",
+      "name": "Quique Fdez Guerra",
+      "image": "https://pbs.twimg.com/profile_images/1098311784073740289/9bJ6ybfB_400x400.jpg",
+      "twitter": "CKGrafico",
+      "github": "CKGrafico"
     }
   ]
 }

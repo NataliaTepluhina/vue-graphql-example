@@ -29,6 +29,20 @@
       "image": "https://pbs.twimg.com/profile_images/1102527483881107457/73d99XXb_400x400.png",
       "twitter": "N_Tepluhina",
       "github": "NataliaTepluhina"
+    },
+    {
+      "id": "KWAXP1uT5",
+      "name": "Gusto",
+      "image": "https://pbs.twimg.com/profile_images/1044221174425817091/3bv5pDCs_400x400.jpg",
+      "twitter": "gustojs",
+      "github": "gustojs"
+    },
+    {
+      "id": "qeu7fPtVb",
+      "name": "test",
+      "image": "",
+      "twitter": "",
+      "github": ""
     }
   ]
 }

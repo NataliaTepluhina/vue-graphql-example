@@ -1,5 +1,9 @@
-module.exports = {
-  presets: [
-    '@vue/app'
-  ]
-}
+[
+  '@babel/preset-env',
+  {
+    corejs: {
+      version: 3,
+      proposals: true,
+    },
+  },
+];
